@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: express-prom
+  labels:
+    app: express-prom
+spec:
+  selector:
+    app: express-prom
+  ports:
+  - name: web
+    port: 80
+    targetPort: 3000
