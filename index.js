@@ -21,5 +21,8 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
+app.get('/health', (_, res) => {
+  res.send('Im alive')
+})
 
 app.listen(3000, () => { console.log('API is running') })
